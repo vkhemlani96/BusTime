@@ -7,7 +7,7 @@
 * Allows users to store favorite routes for easy access from home screen.
 
 ###Screenshots
-![alt tag](https://github.com/vkhemlani96/BusTime/blob/master/screenshots/app_home.png)
+![alt tag](https://github.com/vkhemlani96/BusTime/blob/master/screenshots/app_home.jpg)
 ![alt tag](https://github.com/vkhemlani96/BusTime/blob/master/screenshots/app_favorites.png)
 ![alt tag](https://github.com/vkhemlani96/BusTime/blob/master/screenshots/app_route.png)
 ![alt tag](https://github.com/vkhemlani96/BusTime/blob/master/screenshots/app_stop_preview.png)
