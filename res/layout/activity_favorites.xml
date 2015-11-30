@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favorites_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    tools:context=".FavoritesActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="searchClicked"
+            android:src="@drawable/ic_button_search" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:onClick="locatedClicked"
+            android:src="@drawable/ic_button_device_access_location_found" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="scanClicked"
+            android:src="@drawable/ic_button_qr_code" >
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favorites_search"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="top"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Enter a search query..."
+            android:padding="8dp"
+            android:paddingLeft="16dp" />
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:clickable="true"
+            android:onClick="goClicked"
+            android:text="Go" >
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        style="@style/BlueSectionTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Favorites" />
+
+    <View
+        style="@style/BlueSeperator"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <ViewFlipper
+        android:id="@+id/favorites_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inAnimation="@anim/in_from_bottom"
+        android:outAnimation="@anim/out_to_top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/favorites_progress"
+                style="@android:style/Widget.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateOnly="true" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/favorite_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </ViewFlipper>
+
+</LinearLayout>

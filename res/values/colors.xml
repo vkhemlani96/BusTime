@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="light_green">#9BCE52</color>
+    <color name="semi_transparent_light_green">#509BCE52</color>
+    <color name="dark_blue">#0b1e54</color>
+    <color name="semi_transparent_dark_blue">#900b1e54</color>
+
+</resources>

@@ -1,0 +1,174 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="BusTimeTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTab</item>
+        <item name="android:textViewStyle">@style/TextView</item>
+        <item name="android:actionBarItemBackground">@drawable/content_background_green</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Bustime</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Bustime</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Bustime</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Bustime</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Bustime</item>
+<!--         <item name="android:windowBackground">@android:color/background_light</item> -->
+        <item name="android:actionModeBackground">@drawable/cab_background_top_bustime</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_bustime</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Bustime</item>
+        <item name="android:editTextBackground">@drawable/bustimetheme_edit_text_holo_light</item>
+        <item name="android:textColorHighlight">#990b1e54</item>
+        <item name="android:textSelectHandleLeft">@drawable/bustimetheme_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/bustimetheme_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/bustimetheme_text_select_handle_middle</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewBusTimeTheme</item>
+        <item name="android:buttonStyle">@style/ButtonBusTimeTheme</item>
+        <item name="android:listViewStyle">@style/ListViewBusTimeTheme</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonBusTimeTheme</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/bustimetheme_fastscroll_thumb_holo</item>
+
+        <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Bustime.Widget</item>
+    </style>
+
+    <style name="TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ListViewBusTimeTheme">
+        <item name="android:listSelector">@drawable/content_background_green</item>
+        <item name="android:divider">?android:attr/listDivider</item>
+    </style>
+
+    <style name="ActionBarTab" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ActionBar.Solid.Bustime" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_bustime</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_bustime</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_bustime</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Bustime</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Bustime" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_bustime</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Bustime</item>
+    </style>
+
+    <style name="PopupMenu.Bustime" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bustime</item>
+    </style>
+
+    <style name="DropDownListView.Bustime" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/content_background_green</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Bustime" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_bustime</item>
+    </style>
+
+    <style name="DropDownNav.Bustime" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_bustime</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bustime</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_bustime</item>
+    </style>
+
+    <style name="ProgressBar.Bustime" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_bustime</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Bustime" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_bustime</item>
+    </style>
+
+    <style name="AutoCompleteTextViewBusTimeTheme" parent="android:Widget.Holo.Light.AutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/bustimetheme_list_selector_holo_light</item>
+        <item name="android:background">@drawable/bustimetheme_edit_text_holo_light</item>
+    </style>
+
+    <style name="ButtonBusTimeTheme" parent="android:Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/bustimetheme_btn_default_holo_light</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ImageButtonBusTimeTheme" parent="android:Widget.Holo.Light.ImageButton">
+        <item name="android:background">@drawable/bustimetheme_btn_default_holo_light</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Bustime.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Bustime</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Bustime</item>
+    </style>
+
+    <style name="GreenSectionTitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/light_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <style name="BlueSectionTitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <style name="ActionBarTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="GreenSeperator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/light_green</item>
+    </style>
+
+    <style name="BlueSeperator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/dark_blue</item>
+    </style>
+
+    <style name="GreySeperator">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="ThinSeperator" parent="@style/GreySeperator">
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+</resources>

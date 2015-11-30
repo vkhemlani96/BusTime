@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:id="@+id/message"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Select a route:"
+        style="@android:style/TextAppearance.Medium" />
+
+    <View
+        style="@style/GreySeperator"
+        android:background="?android:attr/listDivider" />
+
+    <ListView
+        android:id="@+id/suggestion_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:attr/listDivider">
+    </ListView>
+
+    <View
+        style="@style/ThinSeperator"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/cancel"
+        style="?android:attr/buttonBarButtonStyle"
+        android:textStyle="normal"
+        android:background="@drawable/content_background_green"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@android:string/cancel" />
+
+</LinearLayout>
